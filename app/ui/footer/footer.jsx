@@ -1,0 +1,88 @@
+import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+const Footer = () => {
+  return (
+    <footer className="container bg-black text-white py-12 ">
+      {/*  Footer Content Container */}
+      <div className="flex flex-wrap justify-around">
+        {/*  Footer General  */}
+        <div className="mb-6 flex flex-wrap lg:mb-0">
+          <ul>
+            <li>
+              <Link href="#" className="hover:text-gray-400">
+                Hakkımızda
+              </Link>
+            </li>
+            <li>
+              <Link href="#" className="hover:text-gray-400">
+                Yayın İlkeleri
+              </Link>
+            </li>
+            <li>
+              <Link href="#" className="hover:text-gray-400">
+                Gizlilik Politikası
+              </Link>
+            </li>
+            <li>
+              <Link href="#" className="hover:text-gray-400">
+                İletişim
+              </Link>
+            </li>
+            <li>
+              <Link href="#" className="hover:text-gray-400">
+                Reklam
+              </Link>
+            </li>
+          </ul>
+        </div>
+
+        {/*  Social Media Links */}
+        <div className="flex flex-col mb-6 lg:mb-0">
+          <h3 className="text-lg font-bold mb-4">Sosyal Medya</h3>
+          <ul>
+            <li>
+              <Link href="#" className="hover:text-gray-400">
+                <i className="fab fa-instagram"></i> Instagram
+              </Link>
+            </li>
+            <li>
+              <Link href="#" className="hover:text-gray-400">
+                <i className="fab fa-twitter"></i> Twitter
+              </Link>
+            </li>
+            <li>
+              <Link href="#" className="hover:text-gray-400">
+                <i className="fab fa-facebook"></i> Facebook
+              </Link>
+            </li>
+          </ul>
+        </div>
+
+        {/*  App Store and Google Play Links  */}
+        <div className="flex flex-col mb-6 lg:mb-0">
+          <h3 className="text-lg font-bold mb-4">Uygulama İndir</h3>
+          <ul>
+            <li>
+              <Link href="#" className="hover:text-gray-400">
+                <i className="fab fa-app-store"></i> App Store
+              </Link>
+            </li>
+            <li>
+              <Link href="#" className="hover:text-gray-400">
+                <i className="fab fa-google-play"></i> Google Play Store
+              </Link>
+            </li>
+          </ul>
+        </div>
+
+        {/* Copyright */}
+        <div className="text-gray-400 text-sm justify-items-end items-end">
+          <p>&copy; 2023 Newspaper All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;

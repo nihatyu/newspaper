@@ -4,16 +4,16 @@ import { faSearch } from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
   return (
-    <div className="container flex py-12 uppercase bg-black text-white justify-between items-center">
+    <header className="container flex flex-col lg:flex-row py-4 lg:py-12 uppercase bg-black text-white justify-between items-center">
       {/* Logo */}
-      <Link href="/" className="font-bold text-2xl ml-9 transition-all">
+      <Link href="/" className="font-bold text-2xl ml-4 lg:ml-9 transition-all">
         <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-red-500">
           Newspaper
         </span>
       </Link>
 
       {/* Categories */}
-      <div className="flex space-x-10">
+      <div className="flex mt-4 lg:mt-0 space-x-4 lg:space-x-10">
         <Link href="/" className="hover:text-gray-300 transition-all">
           Dünya
         </Link>
@@ -32,7 +32,7 @@ const Header = () => {
       </div>
 
       {/* Search - Login */}
-      <div className="flex items-center mr-9 space-x-4">
+      <div className="flex items-center mt-4 lg:mt-0 mr-4 lg:mr-9 space-x-4">
         {/* Search */}
         <div className="group relative">
           <FontAwesomeIcon
@@ -54,7 +54,7 @@ const Header = () => {
           Giriş Yap
         </Link>
       </div>
-    </div>
+    </header>
   );
 };
 
