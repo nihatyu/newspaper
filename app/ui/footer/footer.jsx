@@ -1,5 +1,7 @@
 import Link from "next/link";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faInstagram } from "@fortawesome/free-solid-svg-icons";
 
 const Footer = () => {
   return (
@@ -43,7 +45,8 @@ const Footer = () => {
           <ul>
             <li>
               <Link href="#" className="hover:text-gray-400">
-                <i className="fab fa-instagram"></i> Instagram
+                <FontAwesomeIcon icon={faInstagram} />
+                Instagram
               </Link>
             </li>
             <li>
@@ -64,8 +67,8 @@ const Footer = () => {
           <h3 className="text-lg font-bold mb-4">Uygulama İndir</h3>
           <ul>
             <li>
-              <Link href="#" className="hover:text-gray-400">
-                <i className="fab fa-app-store"></i> App Store
+              <Link href="#" className="hover:text-gray-400 ">
+                <i className="fab fa-app-store "></i> App Store
               </Link>
             </li>
             <li>
@@ -77,7 +80,7 @@ const Footer = () => {
         </div>
 
         {/* Copyright */}
-        <div className="text-gray-400 text-sm justify-items-end items-end">
+        <div className="w-full text-center text-gray-400 text-sm mt-4">
           <p>&copy; 2023 Newspaper All rights reserved.</p>
         </div>
       </div>
