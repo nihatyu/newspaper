@@ -2,6 +2,29 @@ import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 
+const categories = [
+  {
+    name: "Dünya",
+    url: "dünya",
+  },
+  {
+    name: "Finans",
+    url: "finans",
+  },
+  {
+    name: "Teknoloji",
+    url: "teknoloji",
+  },
+  {
+    name: "Spor",
+    url: "spor",
+  },
+  {
+    name: "Magazin",
+    url: "magazin",
+  },
+];
+
 const Header = () => {
   return (
     <header className="container flex flex-col lg:flex-row py-4 lg:py-12 uppercase bg-black text-white justify-between items-center">
@@ -14,21 +37,17 @@ const Header = () => {
 
       {/* Categories */}
       <div className="flex mt-4 lg:mt-0 space-x-4 lg:space-x-10">
-        <Link href="/" className="hover:text-gray-300 transition-all">
-          Dünya
-        </Link>
-        <Link href="/" className="hover:text-gray-300 transition-all">
-          Finans
-        </Link>
-        <Link href="/" className="hover:text-gray-300 transition-all">
-          Teknoloji
-        </Link>
-        <Link href="/" className="hover:text-gray-300 transition-all">
-          Spor
-        </Link>
-        <Link href="/" className="hover:text-gray-300 transition-all">
-          Magazin
-        </Link>
+        {categories.map((category, i) => {
+          return (
+            <Link
+              href={category.url}
+              className="hover:text-gray-300 transition-all"
+              key={i}
+            >
+              {category.name}
+            </Link>
+          );
+        })}
       </div>
 
       {/* Search - Login */}
