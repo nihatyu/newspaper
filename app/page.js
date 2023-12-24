@@ -1,7 +1,12 @@
 import Image from "next/image";
+import Slider from "./ui/slider";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24"></main>
+    <main className="container flex">
+      <div className="min-h-screen flex items-center justify-center">
+        <Slider />
+      </div>
+    </main>
   );
 }
