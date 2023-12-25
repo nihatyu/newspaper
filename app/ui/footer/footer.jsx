@@ -1,7 +1,13 @@
 import Link from "next/link";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faInstagram } from "@fortawesome/free-brands-svg-icons"
+import {
+  faAppStore,
+  faFacebook,
+  faGooglePlay,
+  faInstagram,
+  faTwitter,
+} from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
   return (
@@ -45,18 +51,20 @@ const Footer = () => {
           <ul>
             <li>
               <Link href="#" className="hover:text-gray-400">
-                <FontAwesomeIcon icon={faInstagram} />
+                <FontAwesomeIcon className="mr-3" icon={faInstagram} />
                 Instagram
               </Link>
             </li>
             <li>
               <Link href="#" className="hover:text-gray-400">
-                <i className="fab fa-twitter"></i> Twitter
+                <FontAwesomeIcon className="mr-3" icon={faTwitter} />
+                Twitter
               </Link>
             </li>
             <li>
               <Link href="#" className="hover:text-gray-400">
-                <i className="fab fa-facebook"></i> Facebook
+                <FontAwesomeIcon className="mr-3" icon={faFacebook} />
+                Facebook
               </Link>
             </li>
           </ul>
@@ -68,12 +76,14 @@ const Footer = () => {
           <ul>
             <li>
               <Link href="#" className="hover:text-gray-400 ">
-                <i className="fab fa-app-store "></i> App Store
+                <FontAwesomeIcon className="mr-3" icon={faAppStore} />
+                App Store
               </Link>
             </li>
             <li>
               <Link href="#" className="hover:text-gray-400">
-                <i className="fab fa-google-play"></i> Google Play Store
+                <FontAwesomeIcon className="mr-3" icon={faGooglePlay} />
+                Google Play Store
               </Link>
             </li>
           </ul>
