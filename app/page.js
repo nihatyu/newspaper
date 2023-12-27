@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Slider from "./ui/slider";
+import Slider from "./ui/homepage/slider";
 import Carousel from "./ui/homepage/carousel";
 
 export default function Home() {
@@ -132,11 +132,11 @@ export default function Home() {
   ];
   return (
     <main className="container flex flex-wrap">
-      <Carousel title="Spor" data={carouselData}></Carousel>
-      <Carousel title="Spor" data={carouselData}></Carousel>
-      <Carousel title="Spor" data={carouselData}></Carousel>
-      <Carousel title="Spor" data={carouselData}></Carousel>
-      <Carousel title="Spor" data={carouselData}></Carousel>
+      {Array(5)
+        .fill()
+        .map((_, index) => (
+          <Carousel key={index} title="Spor" data={carouselData}></Carousel>
+        ))}
     </main>
   );
 }

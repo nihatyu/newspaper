@@ -35,7 +35,9 @@ const Carousel = ({ data, title }) => {
 
   return (
     <div className="w-full my-7">
-      <h2 className="text-3xl font-bold mb-4">{title}</h2>
+      <Link href={title} className="text-3xl font-bold mb-4">
+        {title}
+      </Link>
       <div className="relative overflow-hidden" ref={containerRef}>
         {/* Sol ok */}
         <div className="flex items-center justify-center absolute inset-y-0 left-0 z-10">
@@ -53,20 +55,20 @@ const Carousel = ({ data, title }) => {
         </div>
 
         <div
-          className="flex transition-transform ease-in-out duration-300 transform relative"
+          className="flex transition-transform ease-in-out duration-300 transform relative "
           style={{
             transform: `translateX(${-currentIndex * (100 / cardsToScroll)}%)`,
             width: `${totalWidth}px`, // Tüm kartları yan yana sıralamak için genişlik ayarı
           }}
         >
           {/* Kartlar */}
-          {data.map((item) => (
+          {data.map((item, i) => (
             <Link
               href="/"
-              key={item.id}
-              className={`w-full lg:w-1/${cardsPerPage} p-4 cursor-pointer`}
+              key={i}
+              className={`w-full lg:w-1/${cardsPerPage} p-4 cursor-pointer `}
             >
-              <div className="bg-gray-200 p-4 rounded-lg hover:bg-gray-300">
+              <div className="bg-gray-200 p-4 rounded-lg hover:bg-gray-300 border border-gray-200 shadow dark:text-white dark:bg-gray-800 dark:border-gray-700 ">
                 <Image
                   src={item.img}
                   alt={item.title}
@@ -82,7 +84,9 @@ const Carousel = ({ data, title }) => {
                 >
                   {truncate(item.title, 20)}
                 </h3>
-                <p className="text-sm text-gray-600">{item.category}</p>
+                <p className="text-sm text-gray-600 dark:text-white">
+                  {item.category}
+                </p>
               </div>
             </Link>
           ))}
