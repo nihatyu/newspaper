@@ -1,10 +1,11 @@
 import CardLayout from "../ui/card-layout";
 
 const Page = ({ params }) => {
-  console.log("params :>> ", params);
+  const param = params.categories;
+
   return (
     <>
-      <CardLayout />
+      <CardLayout categoryPath={param} />
     </>
   );
 };

@@ -1,29 +1,9 @@
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
+import { newsData } from "@/app/lib/data";
 
-const categories = [
-  {
-    name: "Dünya",
-    url: "dünya",
-  },
-  {
-    name: "Finans",
-    url: "finans",
-  },
-  {
-    name: "Teknoloji",
-    url: "teknoloji",
-  },
-  {
-    name: "Spor",
-    url: "spor",
-  },
-  {
-    name: "Magazin",
-    url: "magazin",
-  },
-];
+const categories = [...newsData];
 
 const Header = () => {
   return (
@@ -37,14 +17,24 @@ const Header = () => {
 
       {/* Categories */}
       <div className="flex mt-4 lg:mt-0 space-x-4 lg:space-x-10">
-        {categories.map((category, i) => {
+        {Array.from(
+          new Set(categories.map((category) => category.category))
+        ).map((uniqueCategory, i) => {
+          // Benzersiz kategoriyi filtrele
+          const filteredCategory = categories.find(
+            (category) => category.category === uniqueCategory
+          );
+
+          // Eğer filtrelenmiş kategori bulunamazsa, işlemi sonlandır
+          if (!filteredCategory) return null;
+
           return (
             <Link
-              href={category.url}
+              href={filteredCategory.url}
               className="hover:text-gray-300 transition-all"
               key={i}
             >
-              {category.name}
+              {uniqueCategory}
             </Link>
           );
         })}

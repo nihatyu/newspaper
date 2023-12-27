@@ -1,63 +1,21 @@
 import Card from "./card";
+import { newsData } from "../lib/data";
 
-const cardData = [
-  {
-    title:
-      "Bu da bir kart title neden olmasın ki olmasada olur bence bencesini siktir et global olarak nedir olayımız önemli olan o",
-    body: "card body gibi body dir bu arada ya bırak bu işleri hocam sen japonsun bi kere akıllı adamsın akııllı değil misin yoksa biz seni akullı biliyor idik bilmesekte olur imiş doğru mu?",
-  },
-  {
-    title:
-      "Bu da bir kart title neden olmasın ki olmasada olur bence bencesini siktir et global olarak nedir olayımız önemli olan o",
-    body: "card body gibi body dir bu arada ya bırak bu işleri hocam sen japonsun bi kere akıllı adamsın akııllı değil misin yoksa biz seni akullı biliyor idik bilmesekte olur imiş doğru mu?",
-  },
-  {
-    title:
-      "Bu da bir kart title neden olmasın ki olmasada olur bence bencesini siktir et global olarak nedir olayımız önemli olan o",
-    body: "card body gibi body dir bu arada ya bırak bu işleri hocam sen japonsun bi kere akıllı adamsın akııllı değil misin yoksa biz seni akullı biliyor idik bilmesekte olur imiş doğru mu?",
-  },
-  {
-    title:
-      "Bu da bir kart title neden olmasın ki olmasada olur bence bencesini siktir et global olarak nedir olayımız önemli olan o",
-    body: "card body gibi body dir bu arada ya bırak bu işleri hocam sen japonsun bi kere akıllı adamsın akııllı değil misin yoksa biz seni akullı biliyor idik bilmesekte olur imiş doğru mu?",
-  },
-  {
-    title:
-      "Bu da bir kart title neden olmasın ki olmasada olur bence bencesini siktir et global olarak nedir olayımız önemli olan o",
-    body: "card body gibi body dir bu arada ya bırak bu işleri hocam sen japonsun bi kere akıllı adamsın akııllı değil misin yoksa biz seni akullı biliyor idik bilmesekte olur imiş doğru mu?",
-  },
-  {
-    title:
-      "Bu da bir kart title neden olmasın ki olmasada olur bence bencesini siktir et global olarak nedir olayımız önemli olan o",
-    body: "card body gibi body dir bu arada ya bırak bu işleri hocam sen japonsun bi kere akıllı adamsın akııllı değil misin yoksa biz seni akullı biliyor idik bilmesekte olur imiş doğru mu?",
-  },
-  {
-    title:
-      "Bu da bir kart title neden olmasın ki olmasada olur bence bencesini siktir et global olarak nedir olayımız önemli olan o",
-    body: "card body gibi body dir bu arada ya bırak bu işleri hocam sen japonsun bi kere akıllı adamsın akııllı değil misin yoksa biz seni akullı biliyor idik bilmesekte olur imiş doğru mu?",
-  },
-  {
-    title:
-      "Bu da bir kart title neden olmasın ki olmasada olur bence bencesini siktir et global olarak nedir olayımız önemli olan o",
-    body: "card body gibi body dir bu arada ya bırak bu işleri hocam sen japonsun bi kere akıllı adamsın akııllı değil misin yoksa biz seni akullı biliyor idik bilmesekte olur imiş doğru mu?",
-  },
-  {
-    title:
-      "Bu da bir kart title neden olmasın ki olmasada olur bence bencesini siktir et global olarak nedir olayımız önemli olan o",
-    body: "card body gibi body dir bu arada ya bırak bu işleri hocam sen japonsun bi kere akıllı adamsın akııllı değil misin yoksa biz seni akullı biliyor idik bilmesekte olur imiş doğru mu?",
-  },
-  {
-    title:
-      "Bu da bir kart title neden olmasın ki olmasada olur bence bencesini siktir et global olarak nedir olayımız önemli olan o",
-    body: "card body gibi body dir bu arada ya bırak bu işleri hocam sen japonsun bi kere akıllı adamsın akııllı değil misin yoksa biz seni akullı biliyor idik bilmesekte olur imiş doğru mu?",
-  },
-];
+const CardLayout = ({ categoryPath }) => {
+  // categoryPath ile eşleşen kartları filtrele
 
-const CardLayout = () => {
+  const filteredCards = newsData.filter((card) => card.url === categoryPath);
+
   return (
     <div className="container flex flex-wrap justify-between">
-      {cardData.map((card, index) => (
-        <Card cardTitle={card.title} cardBody={card.body} key={index} />
+      {filteredCards.map((card, index) => (
+        <Card
+          id={card.id}
+          cardTitle={card.title}
+          cardBody={card.body}
+          category={card.url}
+          key={index}
+        />
       ))}
     </div>
   );

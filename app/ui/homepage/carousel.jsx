@@ -11,7 +11,7 @@ const truncate = (text, max) => {
   return text.length > max ? `${text.slice(0, max)}...` : text;
 };
 
-const Carousel = ({ data, title }) => {
+const Carousel = ({ data }) => {
   const cardCount = data.length;
   const cardsPerPage = 6; // lg ekran için
   const cardWidth = 350; // Kartın genişliği
@@ -35,8 +35,8 @@ const Carousel = ({ data, title }) => {
 
   return (
     <div className="w-full my-7">
-      <Link href={title} className="text-3xl font-bold mb-4">
-        {title}
+      <Link href={`/${data.category}`} className="text-3xl font-bold mb-4">
+        {data.category}
       </Link>
       <div className="relative overflow-hidden" ref={containerRef}>
         {/* Sol ok */}

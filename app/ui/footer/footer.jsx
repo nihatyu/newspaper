@@ -10,6 +10,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
   return (
     <footer className="container bg-black text-white py-12 ">
       {/*  Footer Content Container */}
@@ -91,7 +92,7 @@ const Footer = () => {
 
         {/* Copyright */}
         <div className="w-full text-center text-gray-400 text-sm mt-4">
-          <p>&copy; 2023 Newspaper All rights reserved.</p>
+          <p>&copy; {currentYear} Newspaper All rights reserved.</p>
         </div>
       </div>
     </footer>
