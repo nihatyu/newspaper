@@ -12,7 +12,7 @@ const CardLayout = ({ categoryPath }) => {
         <Card
           id={card.id}
           cardTitle={card.title}
-          cardBody={card.body}
+          cardBody={card.paragraph}
           category={card.url}
           key={index}
         />
