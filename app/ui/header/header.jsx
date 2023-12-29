@@ -58,7 +58,7 @@ const Header = ({ params }) => {
 
         {/* Login */}
         <Link
-          href="/"
+          href="/login"
           className="cursor-pointer text-white border border-white px-4 py-2 rounded-full hover:bg-white hover:text-black transition-all"
         >
           Giriş Yap
