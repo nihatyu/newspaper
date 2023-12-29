@@ -41,8 +41,8 @@ const newsModel = {
 };
 
 // Örnek kullanım
-console.log(newsModel.title); // "Example News Title"
-console.log(newsModel.category.name); // Eğer kategori adı varsa, bu şekilde erişebilirsiniz
+// console.log(newsModel.title); // "Example News Title"
+// console.log(newsModel.category.name); // Eğer kategori adı varsa, bu şekilde erişebilirsiniz
 
 export const newsData = [
   {

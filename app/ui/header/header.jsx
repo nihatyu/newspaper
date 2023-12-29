@@ -5,7 +5,8 @@ import { newsData } from "@/app/lib/data";
 
 const categories = [...newsData];
 
-const Header = () => {
+const Header = ({ params }) => {
+  console.log("params :>> ", params);
   return (
     <header className="container flex flex-col lg:flex-row py-4 lg:py-12 uppercase bg-black text-white justify-between items-center">
       {/* Logo */}

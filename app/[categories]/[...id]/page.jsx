@@ -8,16 +8,12 @@ const Page = ({ params }) => {
   // Destructuring ile params objesinden id'yi çıkar
   const { id } = params;
 
-  console.log("id :>> ", id);
-
   // id'yi kullanarak uygun haber nesnesini bul
   const selectedNews = newsData.find((news) => news.id === id[0]);
 
   // Eğer haber bulunduysa, HaberDetay component'ine props olarak gönder
   if (selectedNews) {
     const { title, spot, img, paragraph } = selectedNews;
-
-    console.log("title :>> ", title);
 
     return (
       <div>
