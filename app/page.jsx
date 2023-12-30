@@ -4,10 +4,9 @@ import Slider from "./ui/homepage/slider";
 
 export default function Home({ params }) {
   const carouselData = [...newsData];
-  console.log("params :>> ", params);
 
   return (
-    <main className="container flex flex-wrap">
+    <main className="container flex flex-wrap bg-slate-800 ">
       <Slider />
       {/* <Carousel /> */}
     </main>

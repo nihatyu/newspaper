@@ -6,6 +6,7 @@ import "@fortawesome/fontawesome-svg-core/styles.css"; // import Font Awesome CS
 import { config } from "@fortawesome/fontawesome-svg-core";
 import Header from "./ui/header/header";
 import Footer from "./ui/footer/footer";
+import { ThemeModeScript } from "flowbite-react";
 
 config.autoAddCss = false;
 
@@ -19,6 +20,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <ThemeModeScript />
+      </head>
       <body className={inter.className}>
         <Header />
         {children}
