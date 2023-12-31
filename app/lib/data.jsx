@@ -299,4 +299,48 @@ export const newsData = [
     paragraph:
       "card paragraph gibi paragraph dir bu arada ya bırak bu işleri hocam sen japonsun bi kere akıllı adamsın akııllı değil misin yoksa biz seni akullı biliyor idik bilmesekte olur imiş doğru mu?",
   },
+  {
+    id: "24",
+    category: "Teknoloji",
+    url: "teknoloji",
+    img: "https://mo.ciner.com.tr/showtv/iu/400x400/show-tv-ana-haber.jpg?v=1695713446?v=438",
+    spot: "Example SpotExample SpotExample SpotExample SpotExample SpotExample SpotExample SpotExample SpotExample SpotExample SpotExample SpotExample SpotExample SpotExample SpotExample SpotExample Spot",
+    title:
+      "Bu da bir kart title neden olmasın ki olmasada olur bence bencesini siktir et global olarak nedir olayımız önemli olan o",
+    paragraph:
+      "card paragraph gibi paragraph dir bu arada ya bırak bu işleri hocam sen japonsun bi kere akıllı adamsın akııllı değil misin yoksa biz seni akullı biliyor idik bilmesekte olur imiş doğru mu?",
+  },
+  {
+    id: "25",
+    category: "Teknoloji",
+    url: "teknoloji",
+    img: "https://mo.ciner.com.tr/showtv/iu/400x400/show-tv-ana-haber.jpg?v=1695713446?v=438",
+    spot: "Example SpotExample SpotExample SpotExample SpotExample SpotExample SpotExample SpotExample SpotExample SpotExample SpotExample SpotExample SpotExample SpotExample SpotExample SpotExample Spot",
+    title:
+      "Bu da bir kart title neden olmasın ki olmasada olur bence bencesini siktir et global olarak nedir olayımız önemli olan o",
+    paragraph:
+      "card paragraph gibi paragraph dir bu arada ya bırak bu işleri hocam sen japonsun bi kere akıllı adamsın akııllı değil misin yoksa biz seni akullı biliyor idik bilmesekte olur imiş doğru mu?",
+  },
+  {
+    id: "26",
+    category: "Teknoloji",
+    url: "teknoloji",
+    img: "https://mo.ciner.com.tr/showtv/iu/400x400/show-tv-ana-haber.jpg?v=1695713446?v=438",
+    spot: "Example SpotExample SpotExample SpotExample SpotExample SpotExample SpotExample SpotExample SpotExample SpotExample SpotExample SpotExample SpotExample SpotExample SpotExample SpotExample Spot",
+    title:
+      "Bu da bir kart title neden olmasın ki olmasada olur bence bencesini siktir et global olarak nedir olayımız önemli olan o",
+    paragraph:
+      "card paragraph gibi paragraph dir bu arada ya bırak bu işleri hocam sen japonsun bi kere akıllı adamsın akııllı değil misin yoksa biz seni akullı biliyor idik bilmesekte olur imiş doğru mu?",
+  },
+  {
+    id: "27",
+    category: "Dünya",
+    url: "dunya",
+    img: "https://mo.ciner.com.tr/showtv/iu/400x400/show-tv-ana-haber.jpg?v=1695713446?v=438",
+    spot: "Example SpotExample SpotExample SpotExample SpotExample SpotExample SpotExample SpotExample SpotExample SpotExample SpotExample SpotExample SpotExample SpotExample SpotExample SpotExample Spot",
+    title:
+      "Bu da bir kart title neden olmasın ki olmasada olur bence bencesini siktir et global olarak nedir olayımız önemli olan o",
+    paragraph:
+      "card paragraph gibi paragraph dir bu arada ya bırak bu işleri hocam sen japonsun bi kere akıllı adamsın akııllı değil misin yoksa biz seni akullı biliyor idik bilmesekte olur imiş doğru mu?",
+  },
 ];

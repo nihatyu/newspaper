@@ -30,7 +30,7 @@ const Header = ({ params }) => {
 
           return (
             <Link
-              href={filteredCategory.url}
+              href={`/${filteredCategory.url}`}
               className="hover:text-gray-300 transition-all"
               key={i}
             >
