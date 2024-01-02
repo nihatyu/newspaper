@@ -1,5 +1,5 @@
 import Card from "./card";
-import { newsData } from "../lib/data";
+import { newsData } from "../lib/placeholder-data";
 
 const CardLayout = ({ categoryPath }) => {
   // categoryPath ile eşleşen kartları filtrele

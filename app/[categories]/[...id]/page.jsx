@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import HaberDetay from "@/app/ui/haber-detay/haber-detay";
 
-import { newsData } from "@/app/lib/data";
+import { newsData } from "@/app/lib/placeholder-data";
 
 const Page = ({ params }) => {
   // Destructuring ile params objesinden id'yi çıkar

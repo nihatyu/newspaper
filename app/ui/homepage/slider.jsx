@@ -1,5 +1,5 @@
 import { Carousel } from "flowbite-react";
-import { newsData } from "@/app/lib/data";
+import { newsData } from "@/app/lib/placeholder-data";
 import Image from "next/image";
 
 const Slider = () => {

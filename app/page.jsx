@@ -1,7 +1,7 @@
 import Slider from "./ui/homepage/slider";
 import ContentGroup from "./ui/homepage/content-group";
 
-import { newsData } from "@/app/lib/data";
+import { newsData } from "@/app/lib/placeholder-data";
 
 // Yardımcı fonksiyon: Verileri kategorilere göre gruplama
 const groupByCategory = (data) => {

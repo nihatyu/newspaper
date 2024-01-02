@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
-import { newsData } from "@/app/lib/data";
+import { newsData } from "@/app/lib/placeholder-data";
 
 const categories = [...newsData];
 

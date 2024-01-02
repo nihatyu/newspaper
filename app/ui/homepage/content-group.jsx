@@ -36,7 +36,7 @@ const ContentGroup = ({ data }) => {
     if (sm) return 1;
     return 6; // Default value
   };
-  console.log("data :>> ", data);
+  // console.log("data :>> ", data);
   return (
     <div className="container flex flex-col m-4">
       <Link
